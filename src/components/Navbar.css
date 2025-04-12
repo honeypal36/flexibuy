@@ -1,0 +1,89 @@
+.navbar {
+    background-color: #004d4d; /* Dark teal background */
+    color: white; /* White text */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 1rem;
+    height: 60px; /* Limit height */
+    display: flex;
+    align-items: center;
+    border-radius: 0; /* Remove rounded corners */
+    justify-content: space-between; /* Space between logo and links */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.navbar h1 {
+    padding-left: 4rem; /* Increase gap from the left side */
+}
+
+.navbar-logo {
+    font-size: 2.5rem; /* Increased font size */
+    color: #e0f7fa; /* Light teal color */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-logo:hover {
+    color: #80deea; /* Brighter teal on hover */
+}
+
+.navbar div {
+    margin-left: auto; /* Push navigation links to the right */
+    display: flex; /* Ensure links are displayed inline */
+    gap: 10px; /* Add spacing between links */
+    padding-right: 60px; /* Add distance from the right edge */
+}
+
+.nav-link {
+    color: #e0f7fa; /* Light teal text */
+    margin: 0 10px; /* Add spacing between links */
+    transition: transform 0.2s, color 0.2s;
+    text-decoration: none; /* Remove underline */
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    color: #80deea; /* Brighter teal on hover */
+}
+
+.hamburger-menu {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-menu svg {
+    width: 24px;
+    height: 24px;
+}
+
+@media (min-width: 768px) {
+    .hamburger-menu {
+        display: none; /* Hide hamburger menu in desktop view */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar div {
+        width: 100%;
+        background-color: #004d4d; /* Match navbar background */
+        padding: 1rem;
+    }
+
+    .nav-link {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}

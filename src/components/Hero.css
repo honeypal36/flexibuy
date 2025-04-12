@@ -1,0 +1,71 @@
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  height: calc(100vh - 60px); /* Full height minus navbar height */
+  background-color: #e0f7fa; /* Light teal background */
+}
+
+.hero-content {
+  max-width: 50%;
+  padding-left: 4rem; /* Increase gap from the left side */
+}
+
+.hero-content h1 {
+  font-size: 4rem; /* Increased font size for the heading */
+  color: #004d4d; /* Dark teal */
+}
+
+.hero-content p {
+  font-size: 1.5rem; /* Increased font size for paragraphs */
+  color: #333;
+  margin-top: 0.5rem; /* Reduce the gap between lines */
+  line-height: 1.4; /* Adjust line height for tighter spacing */
+}
+
+.hero-content p:nth-of-type(2) {
+  font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+}
+
+.typing-animation {
+  font-size: larger; /* Increased font size for the typing animation */
+  color: #004d4d; /* Dark teal */
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.dynamic-text {
+  color: #00796b; /* Slightly darker teal for emphasis */
+  font-style: italic;
+  font-size: larger;
+}
+
+.hero-image {
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image img {
+  max-width: 80%; /* Reduce the maximum width */
+  height: auto;
+  border-radius: 10px; /* Optional: Rounded corners for the image */
+}
+
+.hero-button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #25d366; /* WhatsApp green color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #1da851; /* Darker green on hover */
+}

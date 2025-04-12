@@ -1,0 +1,76 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #242424; /* Dark background */
+  color: white;
+}
+
+.footer-container div {
+  flex: 1;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.footer-branding h2 {
+  font-size: 1.8rem;
+  color: #e0f7fa; /* Light teal */
+}
+
+.footer-branding p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.footer-subscription p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.subscription-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.subscription-form input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.subscription-form button {
+  padding: 0.5rem 1rem;
+  background-color: #00796b; /* Teal button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscription-form button:hover {
+  background-color: #005f56; /* Darker teal on hover */
+}
+
+.footer-social p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-icons a {
+  margin-right: 1rem;
+  color: #e0f7fa; /* Light teal */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #80deea; /* Brighter teal on hover */
+}
+
+.footer-contact p {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
